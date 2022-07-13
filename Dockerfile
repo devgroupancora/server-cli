@@ -22,4 +22,4 @@ RUN yarn add @wppconnect/frontend && \
 COPY . .
 COPY --from=build /usr/src/server-cli/dist /usr/src/server-cli/dist/
 EXPOSE 21465
-ENTRYPOINT ["node", "bin/wppserver.jb"]
+ENTRYPOINT ["node", "bin/wppserver.js"]
