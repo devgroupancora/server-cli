@@ -16,6 +16,7 @@ RUN yarn build
 
 FROM base
 WORKDIR /usr/src/server-cli
+RUN npm install cross-env
 RUN apk add --no-cache chromium
 RUN yarn add @wppconnect/frontend && \
     yarn cache clean
