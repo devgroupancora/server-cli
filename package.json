@@ -19,7 +19,7 @@
     "lint": "eslint --ext .js src",
     "prepare": "husky install",
     "release": "release-it",
-    "start": "cross-env RUN_SERVER=1 babel-node src",
+    "start": "./bin/wppserver.js --port 21465 --frontend",
     "watch": "nodemon -w src --exec \"babel-node src\""
   },
   "config": {
