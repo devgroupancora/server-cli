@@ -21,5 +21,5 @@ RUN yarn add @wppconnect/frontend && \
     yarn cache clean
 COPY . .
 COPY --from=build /usr/src/server-cli/dist /usr/src/server-cli/dist/
-EXPOSE 21465
+EXPOSE 80
 ENTRYPOINT ["node", "bin/wppserver.js"]
