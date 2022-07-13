@@ -19,7 +19,7 @@
     "lint": "eslint --ext .js src",
     "prepare": "husky install",
     "release": "release-it",
-    "start": "./bin/wppserver.js --frontend",
+    "start": "./bin/wppserver.js --frontend -k passt5695",
     "watch": "nodemon -w src --exec \"babel-node src\""
   },
   "config": {
